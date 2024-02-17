@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/style_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="Select Style" />
+
+            <Spinner
+                android:id="@+id/style_spinner"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:padding="5sp"
+                android:gravity="center"
+                android:background="@drawable/rounded_edittext_bg"
+                android:entries="@array/style_options"
+                android:spinnerMode="dialog"
+                />
+
+            <TextView
+                android:id="@+id/material_width_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="Select Material Width" />
+
+            <Spinner
+                android:id="@+id/material_width_spinner"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:padding="5sp"
+                android:gravity="center"
+                android:background="@drawable/rounded_edittext_bg"
+                android:spinnerMode="dialog"
+                android:entries="@array/material_width_options" />
+
+            <TextView
+                android:id="@+id/width_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="Enter Width (in inches):" />
+
+            <EditText
+                android:id="@+id/width_entry"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:padding="5sp"
+                android:gravity="center"
+                android:background="@drawable/rounded_edittext_bg"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/height_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="Enter Height (in inches)" />
+
+            <EditText
+                android:id="@+id/height_entry"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext_bg"
+                android:textSize="20sp"
+                android:padding="5sp"
+                android:gravity="center"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/price_label_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="110 Material Price" />
+
+            <EditText
+                android:id="@+id/price_label_1_entry"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="750"
+                android:padding="5sp"
+                android:gravity="center"
+                android:background="@drawable/rounded_edittext_bg"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/price_label_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="60 Material Price" />
+
+            <EditText
+                android:id="@+id/price_label_2_entry"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="550"
+                android:padding="5sp"
+                android:gravity="center"
+                android:background="@drawable/rounded_edittext_bg"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/price_label_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="STIP prices" />
+
+            <EditText
+                android:id="@+id/price_label_3_entry"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="55"
+                android:padding="5sp"
+                android:gravity="center"
+                android:background="@drawable/rounded_edittext_bg"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/price_label_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="IELOT prices" />
+
+            <EditText
+                android:id="@+id/price_label_4_entry"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="35"
+                android:padding="5sp"
+                android:gravity="center"
+                android:background="@drawable/rounded_edittext_bg"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/calculate_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:text="Calculate" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5sp">
+            <TableLayout
+                android:id="@+id/result_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="10sp"
+                android:background="@drawable/rounded_edittext_bg">
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/price_table_label_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Required material Length" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5sp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/price_table_value_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5sp"
+                        android:text="0" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/price_table_label_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Required strip Length" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5sp"
+                        android:text=":" />
+                    <TextView
+                        android:id="@+id/price_table_value_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5sp"
+                        android:text="0" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/row1">
+                    <TextView
+                        android:id="@+id/price_table_label_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Required IELOTS" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5sp"
+                        android:text=":" />
+                    <TextView
+                        android:id="@+id/price_table_value_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5sp"
+                        android:text="0" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/price_table_label_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Price For Material" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5sp"
+                        android:text=":" />
+                    <TextView
+                        android:id="@+id/price_table_value_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5sp"
+                        android:text="0" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/price_table_label_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="STIP Price" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5sp"
+                        android:text=":" />
+                    <TextView
+                        android:id="@+id/price_table_value_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5sp"
+                        android:text="0" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row2">
+                    <TextView
+                        android:id="@+id/price_table_label_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="IELOT Price" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5sp"
+                        android:text=":" />
+                    <TextView
+                        android:id="@+id/price_table_value_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5sp"
+                        android:text="0" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/price_table_label_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Total Price" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5sp"
+                        android:text=":" />
+                    <TextView
+                        android:id="@+id/price_table_value_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginStart="5sp"
+                        android:text="0" />
+                </TableRow>
+
+            </TableLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

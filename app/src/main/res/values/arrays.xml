@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="style_options">
+        <item>Rings</item>
+        <item>3 Fleet</item>
+    </string-array>
+    <string-array name="material_width_options">
+        <item>60 inches</item>
+        <item>110 inches</item>
+    </string-array>
+</resources>
